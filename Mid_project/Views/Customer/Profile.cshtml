@@ -1,0 +1,39 @@
+﻿<html>
+<body>
+    <head>
+        <title>
+            Customer|profile
+        </title>
+        <link rel="stylesheet" type="text/css" href="~/Content/customer.css">
+
+    </head>
+    
+    <h1 id=""> My Profile </h1>
+    <br><br><br><br>
+    <center>
+        <div>
+            <table>
+                <tr>
+                    <td class="academics academicsitem">Username :</td>
+                    <td class="academics academicsitem">@Model.username</td>
+                </tr> 
+                <tr>
+                    <td class="academics academicsitem">Email :</td>
+                    <td class="academics academicsitem">@Model.email</td>
+                </tr>
+                <tr>
+                    <td class="academics academicsitem">Gender :</td>
+                    <td class="academics academicsitem">@Model.gender</td>
+                </tr>
+ 
+                <tr>
+                    <td class="academics academicsitem">Date of birth : </td>
+                    <td class="academics academicsitem">@Model.dob</td>
+                </tr>
+
+            </table>
+        </div>
+    </center>
+</body>
+
+</html>

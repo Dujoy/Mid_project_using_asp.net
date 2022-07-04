@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+}
+<html>
+<body>
+    <head>
+        <link rel="stylesheet" href="~/Content/customer.css">
+
+    </head>
+    <center><div><h1>Customer Home</h1> </div></center>
+    <h2>Welcome  <a id="myfavourite" href="@Url.Action("Profile", "Customer")">My Profile </a> </h2>
+
+    <div class="sticky">
+        <div class="topnav">
+            <li>
+                <a href="#">
+                    <a href="@Url.Action("Home", "Customer")"><h2>|| Home |</h2> </a>
+                    <a href="#">
+                        <a href="@Url.Action("ChangePassword", "Customer")"><h2>| Change Password  |</h2> </a>
+                        <a href="#">
+                            <a href="@Url.Action("AddProduct", "Customer")"><h2>| Add Products  |</h2> </a>
+                            <a href="#">
+                                <a href="@Url.Action("ShowOrder", "Customer")"><h2>| Show Order  |</h2> </a>
+                                <a href="#">
+                                    <a href="@Url.Action("DeleteProduct", "Customer")"><h2>| Delete Order  ||</h2> </a>
+                                    <a href="#">
+                                        <b href="#"> <a href="@Url.Action("Logout", "Customer")"><h2> LogOut </h2></a>
+</div>
+    </div>
+    <br>
+

@@ -1,0 +1,65 @@
+﻿
+ @{
+        ViewBag.Title = "ShowOrder";
+ }
+
+    <html>
+    <body>
+        <head>
+            <link rel="stylesheet" href="~/Content/customer.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+        </head>
+        <center><div><h1>Customer Show Products</h1> </div></center>
+
+        <div class="sticky">
+            <div class="topnav">
+<li>
+    <a href="#">
+        <a href="@Url.Action("Home", "Customer")"><h2>|| Home |</h2> </a>
+        <a href="#">
+            <a href="@Url.Action("ChangePassword", "Customer")"><h2>| Change Password  |</h2> </a>
+            <a href="#">
+                <a href="@Url.Action("AddProduct", "Customer")"><h2>| Add Products  |</h2> </a>
+                <a href="#">
+                    <a href="@Url.Action("ShowOrder", "Customer")"><h2>| Show Order  |</h2> </a>
+                    <a href="#">
+                        <a href="@Url.Action("DeleteProduct", "Customer")"><h2>| Delete Order  ||</h2> </a>
+                        <a href="#">
+                            <b href="#">
+                                <a href="@Url.Action("Logout", "Customer")"><h2> LogOut </h2></a>
+                                </div>
+                                </div>
+                                <br>
+
+                                <div class="card-header">Products List</div>
+                                <div class="card-body scroll-box">
+                                    <div class="table-responsive">
+                                        <table class="table table-striped">
+                                            <tr>
+
+                                                <th scope="col">Id</th>
+                                                <th scope="col">Customer Name</th>
+                                                <th scope="col">Address</th>
+                                                <th scope="col">Amount</th>
+                                                <th scope="col">Product Name</th>
+
+                                            </tr>
+
+                                            @foreach (var leave in Model)
+                                            {
+                                        <tr>
+                                            <td>@leave.id</td>
+                                            <td>@leave.customer_name</td>
+                                            <td>@leave.address</td>
+                                            <td>@leave.amount</td>
+                                            <td>@leave.product</td>
+
+                                        </tr>
+                                            }
+                                        </table>
+                                    </div>
+                                </div>
+                                </div>
+
